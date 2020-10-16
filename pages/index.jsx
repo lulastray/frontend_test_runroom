@@ -6,8 +6,12 @@ import Header from '../components/Header';
 import ContactMe from '../components/ContactMe';
 import ContactModal from '../components/ContactModal';
 import styles from '../styles/Home.module.scss';
+import { useAppContext } from '../contexts/AppContext';
+
 
 const Home = () => {
+  const { menu } = useAppContext();
+
   return (
     <>
       <Head>
@@ -16,6 +20,7 @@ const Home = () => {
       </Head>
 
       <Header />
+      { !menu && 
       <main className="container">
         <section className={styles.billboard}>
           <img src="/main-image.jpg" />
@@ -53,8 +58,12 @@ const Home = () => {
         </section>
         <ContactMe />
       </main>
+    }
+    
       <ContactModal />
+      { !menu &&
       <Footer />
+}
     </>
   );
 };
