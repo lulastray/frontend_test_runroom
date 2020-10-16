@@ -3,17 +3,19 @@
     display: flex;
     background-color: #fff;
     justify-content: space-between;
-    padding-bottom: 1.875rem;
     padding-top: 0.625rem;
 }
 
 .fullScreen {
     height: 100vh;
+    padding-bottom: 1.875rem;
+    nav li {
+        padding: 2.2rem 0;
+    }
 }
 
 .nav {
     opacity: 0;
-    // position: absolute;
     z-index: -1;
 
     &.active {
@@ -28,13 +30,9 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    li{
-      padding: 2rem 0;
-    }
 }
 
 .link {
-    // margin: 0 2.5rem;
 
     &:last-child {
         margin-right: 0;
@@ -62,10 +60,10 @@
         z-index: 1;
     }
 
-    .navList{
-      flex-direction: row;
-      li{
-        padding:0 0 0 1.8rem ;
-      }
+    .navList {
+        flex-direction: row;
+        li {
+            padding: 0 0 0 1.8rem;
+        }
     }
 }

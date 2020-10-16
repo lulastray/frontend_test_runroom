@@ -8,3 +8,9 @@
   &--medium { max-width: 64rem; }
   &--small { max-width: 40rem; }
 }
+
+@media (min-width: 48em) {
+ .container{
+   padding:0;
+ }
+}

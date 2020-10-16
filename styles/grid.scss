@@ -1,3 +1,13 @@
-.grid {}
 
-.column {}
+
+
+@media (min-width: 48em) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .column {
+        grid-column: span 6;
+    }
+}
+   

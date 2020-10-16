@@ -31,10 +31,11 @@ const Home = () => {
             </a>
           </div>
         </section>
+        
         <section id="about">
           <div className="grid">
             <div className="column">
-              <img src="/profile.jpg" />
+              <img src="/profile.jpg" className={styles.profileImg}/>
             </div>
             <div className="column">
               <h2>Sobre mí</h2>
@@ -56,6 +57,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <hr/>
         <ContactMe />
       </main>
     }
