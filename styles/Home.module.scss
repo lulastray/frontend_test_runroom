@@ -4,9 +4,14 @@
     object-fit: cover;
 }
 
+.billboard {
+    margin-bottom: 2rem;
+}
+
 @media (min-width: 48em) {
     .billboard {
         position: relative;
+
     }
     .intro {
         width: 40%;

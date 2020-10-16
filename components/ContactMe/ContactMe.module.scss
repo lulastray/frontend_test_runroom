@@ -3,9 +3,18 @@
   padding-top: 5.625rem;
 }
 
+.contactBtn{
+  text-align: center;
+  margin: 2rem;
+}
+
 @media (min-width: 48em) {
   .container {
     padding-bottom: 7.5rem;
     padding-top: 7.5rem;
+  }
+  .contactBtn{
+    text-align: right;
+    margin: 4rem 5rem 0 0;
   }
 }
