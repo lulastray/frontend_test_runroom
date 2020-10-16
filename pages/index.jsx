@@ -22,9 +22,9 @@ const Home = () => {
       <Header />
       { !menu && 
       <main className="container">
-        <section className={styles.billboard}>
+        <section className="billboard">
           <img src="/main-image.jpg" />
-          <div className={styles.intro}>
+          <div className="intro">
             <h1>Hola, soy Jonas Kahnwald, diseñador de interiores</h1>
             <a className="button" href="#about">
               Sobre mí
@@ -35,7 +35,7 @@ const Home = () => {
         <section id="about">
           <div className="grid">
             <div className="column">
-              <img src="/profile.jpg" className={styles.profileImg}/>
+              <img src="/profile.jpg" className="croppedImg"/>
             </div>
             <div className="column">
               <h2>Sobre mí</h2>

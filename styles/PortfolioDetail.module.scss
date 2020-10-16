@@ -1,8 +1,5 @@
 @import "./variables.scss";
 
-.billboard {
-  min-height: 80vh;
-}
 
 .highlight {
   color: $neutro;
@@ -29,9 +26,47 @@
 .link {
   font-family: $secondaryFont;
   font-size: 2rem;
+  
+  display:flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  
+
 }
 
 .label {
   color: $neutro;
   font-size: 1rem;
+}
+
+.navigation{
+  margin:2rem;
+  display:flex;
+  flex-direction: column;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: $neutro;
+
+  a:first-child{
+    text-align: right;
+    border-bottom: 1px solid;
+  }
+}
+
+
+@media (min-width: 48em) {
+.navigation{
+  flex-direction: row;
+  a:first-child{
+    text-align: left;
+  }
+  a:last-child{
+    text-align: right;
+    border-left: 1px solid;
+  }
+}
+
+.link{
+  width: 50%;
+}
 }

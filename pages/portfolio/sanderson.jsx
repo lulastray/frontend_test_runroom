@@ -15,11 +15,11 @@ const Portfolio = () => {
       </Head>
 
       <Header />
-      <main>
-        <section className={`${styles.billboard} container`}>
+      <main className="container">
+        <section className="billboard">
           <img src="/sanderson.jpg" />
         </section>
-        <section className="container container--medium">
+        <section className="container--medium">
           <div className="grid">
             <div className="column">
               <h1>Sanderson</h1>

@@ -5,9 +5,18 @@
     .grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+
     }
     .column {
         grid-column: span 6;
+     &--reverse {
+        order:2;
+     }
+     p,h1, h2, button, a{
+         margin-left: 5rem;
+     }
     }
+
+    
 }
    

@@ -9,6 +9,13 @@ import styles from './Header.module.scss';
 const Header = () => {
   const { menu, toggleContactModal, toggleMenu } = useAppContext();
 
+  const handleContactClick = () => {
+    if (menu) {
+      toggleMenu();
+    }
+    toggleContactModal();
+  };
+
   return (
     <header className={`container ${styles.header} ${menu ? styles.fullScreen : ''}`}>
       <Link href="/">
@@ -20,22 +27,28 @@ const Header = () => {
         <ul className={styles.navList}>
           <li>
             <Link href="/">
-              <a className={styles.link}>Home</a>
+              <a className={styles.link} onClick={() => menu && toggleMenu()}>
+                Home
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/portfolio">
-              <a className={styles.link}>Portfolio</a>
+              <a className={styles.link} onClick={() => menu && toggleMenu()}>
+                Portfolio
+              </a>
             </Link>
           </li>
           <li>
-            <a className={styles.link}>Contáctame</a>
+            <a className={styles.link} onClick={handleContactClick}>
+              Contáctame
+            </a>
           </li>
         </ul>
       </nav>
       <div className={styles.trigger}>
-        {menu && <Cross className={styles.cross} onClick={toggleMenu}/>}
-        {!menu && <Menu className={styles.menu}  onClick={toggleMenu}/>}
+        {menu && <Cross className={styles.cross} onClick={toggleMenu} />}
+        {!menu && <Menu className={styles.menu} onClick={toggleMenu} />}
       </div>
     </header>
   );

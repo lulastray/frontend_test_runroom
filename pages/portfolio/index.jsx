@@ -17,9 +17,9 @@ const Portfolio = () => {
 
       <Header />
       <main className="container">
-        <section className={styles.billboard}>
-          <img src="/sanderson.jpg" />
-          <div className={styles.intro}>
+        <section className="billboard">
+          <img src="/sanderson.jpg"/>
+          <div className="intro">
             <h2>Sanderson</h2>
             <p>
               Mental games, optical illusions, to eccentricities, to dreams, to successful
@@ -35,7 +35,7 @@ const Portfolio = () => {
         <section>
           <div className={`${styles.work} grid`}>
             <div className="column">
-              <img src="/s-hotel.jpg" />
+              <img src="/s-hotel.jpg" className="croppedImg" />
             </div>
             <div className="column">
               <h2>S Hotel</h2>
@@ -48,8 +48,8 @@ const Portfolio = () => {
             </div>
           </div>
           <div className={`${styles.work} grid`}>
-            <div className="column">
-              <img src="/sls.jpg" />
+            <div className="column  column--reverse">
+              <img src="/sls.jpg" className="croppedImg" />
             </div>
             <div className="column">
               <h2>SLS</h2>
@@ -64,7 +64,7 @@ const Portfolio = () => {
           </div>
           <div className={`${styles.work} grid`}>
             <div className="column">
-              <img src="/s-hotel.jpg" />
+              <img src="/s-hotel.jpg" className="croppedImg" />
             </div>
             <div className="column">
               <h2>Mama Shelter</h2>
@@ -77,10 +77,10 @@ const Portfolio = () => {
             </div>
           </div>
           <div className={`${styles.work} grid`}>
-            <div className="column">
+            <div className="column column--reverse">
               <img src="/xiv.jpg" />
             </div>
-            <div className="column">
+            <div className="column ">
               <h2>XIV</h2>
               <p>
                 XIV, an innovative experience in dining that promises to add an exciting new
