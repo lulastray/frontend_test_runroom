@@ -1,53 +1,58 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
-.header, .nav {
-  align-items: center;
-  display: flex;
+.header,
+.nav {
+    align-items: center;
+    display: flex;
 }
 
 .header {
-  justify-content: space-between;
-  margin-bottom: 1.25rem;
-  padding-bottom: .625rem;
-  padding-top: .625rem;
+    justify-content: space-between;
+    padding-bottom: 1.875rem;
+    padding-top: 0.625rem;
 }
 
 .nav {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
 
-  &.active {
-    opacity: 1;
-    z-index: 2;
-  }
+    &.active {
+        opacity: 1;
+        z-index: 2;
+    }
 }
 
-.navList{
-  display: flex;
+.navList {
+    display: flex;
 }
+
 .link {
-  margin: 0 2.5rem;
+    margin: 0 2.5rem;
 
-  &:last-child { margin-right: 0; }
+    &:last-child {
+        margin-right: 0;
+    }
 
-  &.active,
-  &:hover {
-    color: $primary;
-  }
+    &.active,
+    &:hover {
+        color: $primary;
+    }
 }
 
 @media (min-width: 48em) {
-  .header {
-    padding-bottom: 1.875rem;
-    padding-top: 1.875rem;
-  }
+    .header {
+        padding-bottom: 1.875rem;
+        padding-top: 1.875rem;
+    }
 
-  .trigger { display: none; }
+    .trigger {
+        display: none;
+    }
 
-  .nav {
-    opacity: 1;
-    position: initial;
-    z-index: 1;
-  }
+    .nav {
+        opacity: 1;
+        position: initial;
+        z-index: 1;
+    }
 }
